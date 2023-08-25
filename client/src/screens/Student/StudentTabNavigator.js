@@ -1,12 +1,12 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import StudentHomeScreen from './StudentHomeScreen'; // Import your HomeScreen component
-import StudentExamsScreen from './StudentExamsScreen'; // Import your ExamsScreen component
-import StudentScheduleScreen from './StudentScheduleScreen'; // Import your ScheduleScreen component
-import StudentNotificationsScreen from './StudentNotificationsScreen'; // Import your NotificationsScreen component
-import StudentResultsScreen from './StudentResultsScreen'; // Import your ResultsScreen component
-import StudentSettingsScreen from './StudentSettingsScreen'; // Import your SettingsScreen component
-import Icon from '@expo/vector-icons/Ionicons'; // Import Ionicons from react-native-vector-icons
+import StudentHomeScreen from './StudentHomeScreen'; 
+import StudentExamsScreen from './StudentExamsScreen'; 
+import StudentScheduleScreen from './StudentScheduleScreen'; 
+import StudentNotificationsScreen from './StudentNotificationsScreen'; 
+import StudentResultsScreen from './StudentResultsScreen'; 
+import StudentSettingsScreen from './StudentSettingsScreen'; 
+import Icon from '@expo/vector-icons/Ionicons'; 
 
 const Tab = createBottomTabNavigator();
 

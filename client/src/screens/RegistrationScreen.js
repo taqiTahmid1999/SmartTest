@@ -25,19 +25,17 @@ const RegistrationScreen = ({ navigation }) => {
   
 
   const handleRegistration = () => {
-    // Perform registration logic here based on user inputs
-    // You might want to use a proper authentication service like Firebase
+    
     if (isStudent) {
-      // Register as a student and navigate to StudentTabNavigator
+      
       navigation.navigate('Student');
     } else if (isTeacher) {
-      // Register as a teacher and navigate to TeacherTabNavigator
+      
       navigation.navigate('Teacher');
     }
   };
 
   const handleLogin = () => {
-    // Navigate to the login page
     navigation.navigate('Login');
   };
 
@@ -104,13 +102,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F7F7F7', // Background color
+    backgroundColor: '#F7F7F7', 
   },
   registrationContainer: {
     width: '80%',
     padding: 20,
     borderRadius: 10,
-    backgroundColor: '#FFFFFF', // Registration box background color
+    backgroundColor: '#FFFFFF',
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -137,17 +135,17 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     padding: 10,
     borderWidth: 1,
-    borderColor: '#CCCCCC', // Input border color
+    borderColor: '#CCCCCC', 
     borderRadius: 5,
   },
   continueButton: {
-    backgroundColor: '#007BFF', // Continue button background color
+    backgroundColor: '#007BFF',
     paddingVertical: 10,
     borderRadius: 5,
     alignItems: 'center',
   },
   continueButtonText: {
-    color: 'white', // Continue button text color
+    color: 'white', 
     fontWeight: 'bold',
   },
   googleSignInButton: {
@@ -158,20 +156,20 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#CCCCCC',
     marginTop: 10,
-    flexDirection: 'center', // Align icon and text horizontally
+    flexDirection: 'center', 
   },
   googleIcon: {
-    marginRight: 10, // Add spacing between icon and text
+    marginRight: 10,
   },
   googleSignInText: {
-    color: '#333333', // Google sign-in text color
+    color: '#333333', 
   },
   loginLink: {
     marginTop: 10,
     alignItems: 'center',
   },
   loginLinkText: {
-    color: '#007BFF', // Login link text color
+    color: '#007BFF', 
   },
 });
 
