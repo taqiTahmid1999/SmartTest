@@ -1,11 +1,11 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './HomeScreen'; // Import your HomeScreen component
-import CreateExamScreen from './CreateExamScreen'; // Import your CreateExamScreen component
-import StudentPerformanceScreen from './StudentPerformanceScreen'; // Import your StudentPerformanceScreen component
-import NotificationsScreen from './NotificationsScreen'; // Import your NotificationsScreen component
-import SettingsScreen from './SettingsScreen'; // Import your SettingsScreen component
-import Icon from '@expo/vector-icons/Ionicons'; // Import Ionicons from react-native-vector-icons
+import HomeScreen from './HomeScreen'; 
+import CreateExamScreen from './CreateExamScreen'; 
+import StudentPerformanceScreen from '../Student/StudentPerformanceScreen'; 
+import NotificationsScreen from './NotificationsScreen'; 
+import SettingsScreen from './SettingsScreen'; 
+import Icon from '@expo/vector-icons/Ionicons'; 
 
 const Tab = createBottomTabNavigator();
 

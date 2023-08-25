@@ -5,8 +5,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import RegistrationScreen from './src/screens/RegistrationScreen';
 import LoginScreen from './src/screens/LoginScreen';
-import StudentTabNavigator from './src/screens/StudentTabNavigator';
-import TeacherTabNavigator from './src/screens/TeacherTabNavigator';
+import StudentTabNavigator from './src/screens/Student/StudentTabNavigator';
+import TeacherTabNavigator from './src/screens/Teacher/TeacherTabNavigator';
+
 
 
 
