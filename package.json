@@ -1,0 +1,25 @@
+{
+  "name": "smarttest",
+  "version": "1.0.0",
+  "description": "📚 SmartTest: A cross-platform React Native app for efficient and user-friendly online exam giving, empowering learners to excel with smart exam features. 🚀📝",
+  "main": "index.js",
+  "scripts": {
+    "build": "if-env TYPE=server && (cd server && npm install) || (cd client && npm install)",
+    "server": "node ./server/server.js",
+    "client": "cd client && npx expo start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taqiTahmid1999/SmartTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taqiTahmid1999/SmartTest/issues"
+  },
+  "homepage": "https://github.com/taqiTahmid1999/SmartTest#readme",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
