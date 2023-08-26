@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-// Use the users route
+
 app.use('/users', usersRoute);
 
 app.listen(port, () => {
