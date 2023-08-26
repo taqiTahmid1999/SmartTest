@@ -16,10 +16,10 @@ const Stack = createStackNavigator();
 
 function MyStack() {
   return (
-    <Stack.Navigator initialRouteName="Registration">
+    <Stack.Navigator initialRouteName="Registration" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Registration" component={RegistrationScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Student" component={StudentTabNavigator} />
+        <Stack.Screen name="Student" component={StudentTabNavigator}  />
         <Stack.Screen name="Teacher" component={TeacherTabNavigator} />
       </Stack.Navigator>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet, FlatList } from 'react-native';
-import Question from './Question'; // Import the Question component
+import Question from './Question';
 
 const CreateExamScreen = () => {
   const [examTitle, setExamTitle] = useState('');
@@ -9,7 +9,7 @@ const CreateExamScreen = () => {
   const [numQuestions, setNumQuestions] = useState(10);
   const [questions, setQuestions] = useState([]);
 
-  // ... (handleOptionChange and handleCorrectAnswerChange functions)
+  
   
 const handleOptionChange = (questionIndex, value, optionIndex) => {
   const updatedQuestions = questions.map((q, index) => {
@@ -51,28 +51,14 @@ const handleCorrectAnswerChange = (questionIndex, correctAnswerIndex) => {
   };
 
   const saveExam = () => {
-    // Logic to save the exam and questions to the database
-    // You'll need to use your backend API to save the data
+   
   };
 
   return (
     <View style={styles.container}>
-      <FlatList
-        data={questions}
-        renderItem={({ item, index }) => (
-          <Question
-            question={item}
-            index={index}
-            handleOptionChange={handleOptionChange}
-            handleCorrectAnswerChange={handleCorrectAnswerChange}
-          />
-        )}
-        keyExtractor={(item, index) => index.toString()}
-      />
+      
 
-      <View style={styles.buttonContainer}>
-        <Button title="Save Exam" onPress={saveExam} />
-      </View>
+      
 
       <TextInput
         style={styles.input}
@@ -95,6 +81,21 @@ const handleCorrectAnswerChange = (questionIndex, correctAnswerIndex) => {
       />
 
       <Button title="Generate Questions" onPress={generateQuestions} />
+      <FlatList
+        data={questions}
+        renderItem={({ item, index }) => (
+          <Question
+            question={item}
+            index={index}
+            handleOptionChange={handleOptionChange}
+            handleCorrectAnswerChange={handleCorrectAnswerChange}
+          />
+        )}
+        keyExtractor={(item, index) => index.toString()}
+      />
+      <View style={styles.buttonContainer}>
+        <Button title="Save Exam" onPress={saveExam} />
+      </View>
     </View>
   );
 };
