@@ -1,4 +1,4 @@
-// routes/users.js
+
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
@@ -9,7 +9,7 @@ const pool = new Pool({
   host: 'your_database_host',
   database: 'your_database_name',
   password: 'your_database_password',
-  port: 5432, // Default PostgreSQL port
+  port: 5432, 
 });
 
 router.post('/register', async (req, res) => {
